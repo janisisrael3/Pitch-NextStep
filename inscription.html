@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextStep - Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="images/logo.png" alt="Logo NextStep" class="logo-img">
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="apropos.html">À Propos & Mission</a>
+            <a href="discussion.html">Espace Communautaire</a>
+            <a href="inscription.html" class="active btn-primary">Rejoindre</a>
+        </div>
+    </nav>
+
+    <section class="container split-section">
+        <div class="text-side">
+            <h2>Rejoignez la communauté des futurs leaders.</h2>
+            <p>Créez votre compte NextStep pour accéder aux offres exclusives, au mentorat et à votre réseau professionnel.</p>
+            
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" required placeholder="Ex: Koffi Mensah">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email professionnel</label>
+                    <input type="email" id="email" required placeholder="Ex: koffi@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe sécurisé</label>
+                    <input type="password" id="password" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Valider mon inscription</button>
+            </form>
+
+        </div>
+        <div class="image-side">
+             <img src="https://source.unsplash.com/800x600/?african,man,working,laptop" alt="Jeune homme concentré sur son travail">
+        </div>
+    </section>
+
+    <script>
+        function handleSignup(e) {
+            e.preventDefault();
+            alert("Compte créé avec succès pour la démo ! Redirection vers l'espace de discussion...");
+            window.location.href = 'discussion.html';
+        }
+    </script>
+</body>
+</html>

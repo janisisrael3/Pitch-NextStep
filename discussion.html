@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextStep - Espace Discussion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="images/logo.png" alt="Logo NextStep" class="logo-img">
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="apropos.html">À Propos & Mission</a>
+            <a href="discussion.html" class="active">Espace Communautaire</a>
+            <a href="index.html" class="btn-primary" style="background:#d9534f;">Déconnexion</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 style="text-align: center;">Réseau NextStep : Fil d'actualité & Mentorat</h2>
+        <p style="text-align: center;">Échangez avec des pairs et des mentors en temps réel.</p>
+
+        <div class="chat-container">
+            <div class="chat-header">
+                Saloon Principal - (Simulation Démo)
+            </div>
+            <div class="chat-box" id="chatBox">
+                <div class="message received">
+                    <strong>Sarah (Mentor RH) :</strong> Bonjour à tous les nouveaux inscrits ! N'hésitez pas à poser vos questions sur la préparation des CVs aujourd'hui.
+                </div>
+                <div class="message received">
+                    <strong>Jean-Marc (Étudiant Tech) :</strong> Salut la communauté, quelqu'un a des pistes pour des stages en Data Science sur Abidjan ?
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="messageInput" placeholder="Écrivez votre message ici..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">Envoyer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
